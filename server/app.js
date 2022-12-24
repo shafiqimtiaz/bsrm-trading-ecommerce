@@ -4,8 +4,9 @@ const app = express();
 const cors = require("cors");
 const morgan = require("morgan");
 const error = require("./middlewares/error");
+
 const userRouter = require("./routers/userRouter");
-const userCategory = require("./routers/categoryRouter");
+const categoryRouter = require("./routers/categoryRouter");
 
 app.use(express.json());
 app.use(cors());
@@ -15,7 +16,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 app.use("/api/user", userRouter);
-app.use("/api/category", userCategory);
+app.use("/api/category", categoryRouter);
 
 app.use(error);
 

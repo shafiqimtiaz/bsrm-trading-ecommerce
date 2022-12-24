@@ -8,11 +8,11 @@ mongoose
 		useUnifiedTopology: true,
 		useCreateIndex: true,
 	})
-	.then(() => console.log("Connected to MongoDB !!"))
-	.catch((err) => console.error("MongoDB connection failed !!"));
+	.then(() => console.log("Connected to MongoDB!"))
+	.catch((err) => console.error("MongoDB Connection Failed!"));
 
 const port = process.env.PORT || 3001;
 
 app.listen(port, () => {
-	console.log(`Server running on port: ${port} !!`);
+	console.log(`App running on port ${port}!`);
 });

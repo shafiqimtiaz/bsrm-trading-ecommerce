@@ -8,11 +8,11 @@ const userSchema = Schema(
 			type: String,
 			required: true,
 			minlength: 3,
-			maxlength: 100,
+			maxlenth: 100,
 		},
 		email: {
 			type: String,
-			require: true,
+			required: true,
 			minlength: 5,
 			maxlength: 255,
 			unique: true,
@@ -32,7 +32,7 @@ const userSchema = Schema(
 	{ timestamps: true }
 );
 
-userSchema.methods.generateJWT = () => {
+userSchema.methods.generateJWT = function () {
 	const token = jwt.sign(
 		{
 			_id: this._id,
