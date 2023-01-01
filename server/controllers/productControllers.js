@@ -114,16 +114,6 @@ module.exports.updateProductById = async (req, res) => {
 	});
 };
 
-const body = {
-	order: "desc",
-	sortBy: "price",
-	limit: 6,
-	// skip: 20,
-	filters: {
-		price: [1000, 2000],
-		category: ["63a78d402ee73e402031358c", "63a76d1d2523e56d947026c5"],
-	},
-};
 module.exports.filterProducts = async (req, res) => {
 	let order = req.body.order === "desc" ? -1 : 1;
 	let sortBy = req.body.sortBy ? req.body.sortBy : "_id";
