@@ -2,10 +2,10 @@ require("dotenv/config");
 const app = require("./app");
 const mongoose = require("mongoose");
 
-const DB = process.env.REMOTE_MONGO_DB;
+global.__basedir = __dirname;
 
 mongoose
-	.connect(DB, {
+	.connect(process.env.REMOTE_MONGO_DB, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 		useCreateIndex: true,
