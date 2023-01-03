@@ -2,10 +2,7 @@ require("dotenv/config");
 const app = require("./app");
 const mongoose = require("mongoose");
 
-const DB = process.env.REMOTE_MONGO_DB.replace(
-	"<PASSWORD>",
-	process.env.DB_PASS
-);
+const DB = process.env.REMOTE_MONGO_DB;
 
 mongoose
 	.connect(DB, {
