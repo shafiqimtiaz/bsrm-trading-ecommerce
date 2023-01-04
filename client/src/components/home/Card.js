@@ -29,8 +29,7 @@ const Card = ({ product, handleAddToCart }) => {
 					<div style={{ minHeight: "3em" }}>
 						<p style={titleStyle}>{product.name}</p>
 					</div>
-					<span style={{ fontSize: 20 }}>&#2547;</span>
-					{product.price}
+					${product.price}
 					<p>
 						{product.quantity ? (
 							<span class="badge badge-pill badge-primary">In Stock</span>
