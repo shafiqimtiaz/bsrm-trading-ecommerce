@@ -90,7 +90,7 @@ const Cart = () => {
                         <tr>
                             <th scope="row" />
                             <td colSpan={5} className="text-right">
-                                <Link to="/"><button className="btn btn-warning mr-4">Continue Shoping</button></Link>
+                                <Link to="/"><button className="btn btn-warning mr-4">Continue Shoping</button></Link>&nbsp;
                                 <Link to="/shipping" className="btn btn-success mr-4">Proceed To Checkout</Link>
                             </td>
                         </tr>

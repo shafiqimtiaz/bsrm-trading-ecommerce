@@ -67,7 +67,7 @@ const Checkout = () => {
             </nav>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-8">
+                    <div className="col-md-7">
                         <div className="card mb-5" style={{ height: 'auto' }}>
                             <div className="card-header">Shipping Details</div>
                             <div className="card-body">
@@ -75,7 +75,7 @@ const Checkout = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-5">
                         <div className="card" style={{ height: 'auto' }}>
                             <div className="card-body">
                                 <ul className="list-group list-group-flush">
