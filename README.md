@@ -2,6 +2,4 @@
 
 https://mern-ecom-app.netlify.app/
 
-Admin Login:
-- admin@admin.com
-- 12345
+id: admin@admin.com | pass: 12345
