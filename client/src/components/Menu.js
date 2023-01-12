@@ -24,7 +24,7 @@ const Menu = ({ history }) => {
 			</a>
 
 			<Link to="/" className="navbar-brand">
-				Super Online Store
+				BSRM Trading
 			</Link>
 
 			<ul className="nav nav-tabs border-0">
